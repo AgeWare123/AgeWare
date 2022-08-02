@@ -41,7 +41,7 @@ DupeSection:NewButton("Dupe Pets", "Duplicates the pets", function()
         if not DupeMultiplier then
             if Pet:FindFirstChild('Frame', true) and Pet:FindFirstChild('Frame', true):FindFirstChild('Equipped', true) and Pet.Frame.Equipped.Visible == true then
                 local PetClone = Pet:Clone()
-                PetClone.Name == Index..' NutrexWasHere'
+                PetClone.Name = Index..' NutrexWasHere'
                 PetClone.Parent = Pet.Parent
             end
         else
@@ -58,7 +58,6 @@ DupeSection:NewButton("Dupe Pets", "Duplicates the pets", function()
             end
         end
     end
-    game:GetService("Players").az2166.PlayerGui.ScreenGui.Inventory.Frame.Container.Pets.Content.Frame.Items["da2c1230-e95c-4753-830e-d50be83157fb"].Frame.Equipped
 
 end)
 
