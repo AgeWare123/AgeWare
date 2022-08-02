@@ -49,7 +49,7 @@ DupeSection:NewButton("Dupe Pets", "Duplicates the pets", function()
                 for Index = 1, Dupe_Amount do
                     if Pet:FindFirstChild('Frame', true) and Pet:FindFirstChild('Frame', true):FindFirstChild('Equipped', true) and Pet.Frame.Equipped.Visible == true then
                         local PetClone = Pet:Clone()
-                        PetClone.Name == Index..' NutrexWasHere'
+                        PetClone.Name = Index..' NutrexWasHere'
                         PetClone.Parent = Pet.Parent
                     end
                 end
